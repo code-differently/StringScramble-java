@@ -14,7 +14,15 @@ public class Solution {
      */
     public Boolean stringScramble(String str1, String str2) {
         // code goes here
-        return null;
+        int counter = 0;
+        char[] chArray = str2.toCharArray();
+        for(int i = 0; i < chArray.length; i++){
+            if(str1.contains(String.valueOf(chArray[i]))){
+                counter++;
+            }
+        }
+        return counter == chArray.length ? true : false;
     }
+
 }
 

@@ -13,6 +13,8 @@ public class SolutionTest {
 
         Boolean actual = solution.stringScramble(str1,str2);
         Assert.assertTrue(actual);
+
+        System.out.println(actual);
     }
 
     @Test
@@ -23,6 +25,8 @@ public class SolutionTest {
 
         Boolean actual = solution.stringScramble(str1,str2);
         Assert.assertFalse(actual);
+
+        System.out.println(actual);
     }
 
     @Test
@@ -33,5 +37,7 @@ public class SolutionTest {
 
         Boolean actual = solution.stringScramble(str1,str2);
         Assert.assertTrue(actual);
+
+        System.out.println(actual);
     }
 }
